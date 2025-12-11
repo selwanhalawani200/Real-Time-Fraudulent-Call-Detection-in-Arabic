@@ -14,7 +14,7 @@
 
 ---
 
-### Project Overview
+## Project Overview
 This repository presents an end-to-end Arabic Fraud Call Detection System that combines Automatic Speech Recognition (ASR) with Natural Language Processing (NLP) to identify fraudulent phone-call interactions.
 
 The system utilizes Whisper Large-v3 for transcription and fine-tuned Arabic transformer models to classify calls as Fraud or Safe based on linguistic cues.
@@ -22,7 +22,7 @@ The system utilizes Whisper Large-v3 for transcription and fine-tuned Arabic tra
 Designed as a lightweight, efficient, and scalable pipeline, the project enables real-time fraud detection suitable for Arabic-speaking environments with diverse dialects and noisy conditions.
 
 
-### Objective
+## Objective
 To develop a reliable and practical AI system capable of detecting fraudulent behavior in Arabic phone calls while supporting multiple dialects and real-world noisy acoustic conditions.
 
 
