@@ -1,4 +1,4 @@
-<img width="619" height="240" alt="image" src="https://github.com/user-attachments/assets/aa19b04e-fdbc-4f12-9d78-89e16770b31d" /># Real-Time-Fraudulent-Call-Detection-in-Arabic
+
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
