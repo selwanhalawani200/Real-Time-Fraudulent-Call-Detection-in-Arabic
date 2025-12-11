@@ -1,4 +1,4 @@
-# Real-Time-Fraudulent-Call-Detection-in-Arabic
+<img width="619" height="240" alt="image" src="https://github.com/user-attachments/assets/aa19b04e-fdbc-4f12-9d78-89e16770b31d" /># Real-Time-Fraudulent-Call-Detection-in-Arabic
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -10,9 +10,7 @@
 7. [Performance Summary](#performance-summary)
 8. [Installation](#installation)
 9. [Usage Example](#usage-example)
-10. [Repository Structure](#repository-structure)
-11. [Limitations](#limitations)
-12. [Team](#team)
+
 
 ---
 
@@ -23,11 +21,11 @@ The system utilizes Whisper Large-v3 for transcription and fine-tuned Arabic tra
 
 Designed as a lightweight, efficient, and scalable pipeline, the project enables real-time fraud detection suitable for Arabic-speaking environments with diverse dialects and noisy conditions.
 
----
+
 ### Objective
 To develop a reliable and practical AI system capable of detecting fraudulent behavior in Arabic phone calls while supporting multiple dialects and real-world noisy acoustic conditions.
 
----
+
 
 ## Dataset Summary
 The dataset consists of **1,570 Arabic phone-call recordings**, divided into:
@@ -48,7 +46,7 @@ Each call includes:
 This repository includes the metadata file used in the project:
 [metadata.csv](metadata/metadata.csv)
 
----
+
 
 ## System Features
 
@@ -59,7 +57,7 @@ This repository includes the metadata file used in the project:
 - Provides a fraud-risk percentage for each call  
 - Highlights the key terms and phrases that triggered the fraud detection
 
----
+
 
 ## Model Architecture
 - **Audio Input:** real or synthetic phone-call recordings  
@@ -69,7 +67,7 @@ This repository includes the metadata file used in the project:
 - **Weighted Probability Aggregation:** produces a stable call-level score  
 - **Final Decision:** outputs Fraud/Safe label + risk percentage + highlighted suspicious terms
 
----
+
 
 ##  Models Used
 
@@ -83,7 +81,7 @@ Fine-tuned transformer models:
 - **CAMeLBERT**  
 - **MARBERT** (best robustness on dialectal ASR output)
 
----
+
 
 ## Performance Summary
 
@@ -95,18 +93,23 @@ Fine-tuned transformer models:
 
 At the call level, threshold-based aggregation achieved the most stable and accurate performance. Majority voting and weighted probability voting were evaluated as comparison baselines, but the threshold method consistently provided the most reliable final decisions.
 
----
+
 
 ## Installation
+
+Install all required dependencies:
+
 pip install transformers jiwer openai-whisper torch numpy pandas
 
----
+
+
 
 ## Usage Example
+``` 
 import whisper, torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-# Load ASR
+#Load ASR
 asr = whisper.load_model("large-v3")
 
 # Load MARBERT (local)
